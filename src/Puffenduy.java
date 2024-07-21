@@ -71,4 +71,5 @@ public class Puffenduy extends hogwarts {
     public String toString() {
         return student;
     }
+
 }

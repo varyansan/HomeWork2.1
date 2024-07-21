@@ -86,4 +86,5 @@ public class Grifindor extends hogwarts {
     public String toString() {
         return student;
     }
+
 }

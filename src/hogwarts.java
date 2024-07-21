@@ -55,4 +55,5 @@ public abstract class hogwarts {
         return powerOfMagic + transgression;
 
     }
+
 }

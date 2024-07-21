@@ -110,4 +110,5 @@ public class Slizerin extends hogwarts {
     public String toString() {
         return student;
     }
+
 }

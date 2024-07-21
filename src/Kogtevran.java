@@ -98,4 +98,5 @@ public class Kogtevran extends hogwarts {
     public String toString() {
         return student;
     }
+
 }
