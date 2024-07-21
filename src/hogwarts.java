@@ -52,7 +52,8 @@ public abstract class hogwarts {
     }
 
     private int getPower() {
-    return powerOfMagic + transgression;
+        return powerOfMagic + transgression;
 
-}
+    }
+
 }

@@ -1,4 +1,4 @@
-public class Puffenduy extends hogwarts{
+public class Puffenduy extends hogwarts {
     private int hardWork;
     private int loyalty;
     private int honesty;
@@ -36,11 +36,13 @@ public class Puffenduy extends hogwarts{
         checkParam(honesty);
         this.honesty = honesty;
     }
+
     public void checkParam(int param) {
         if (param < 0 || param > 100) {
             System.out.println("Не верный параметр!");
         }
     }
+
     public void comparePuffenduyStudents(Puffenduy student) {
         if (getPower() > student.getPower()) {
             System.out.println(this + " лучший студент, чем " + student);
@@ -54,12 +56,13 @@ public class Puffenduy extends hogwarts{
     private int getPower() {
         return hardWork + loyalty + honesty;
     }
+
     public String toStringFullInfo() {
         return "Факультет Пуффендуй:" +
                 "Студент: " + student +
                 ", магическая сила: " + powerOfMagic +
                 ", трансгрессия: " + transgression +
-                ", трудолюбие: " +  hardWork+
+                ", трудолюбие: " + hardWork +
                 ", верность: " + loyalty +
                 ", честность: " + honesty;
     }
@@ -68,4 +71,5 @@ public class Puffenduy extends hogwarts{
     public String toString() {
         return student;
     }
+
 }

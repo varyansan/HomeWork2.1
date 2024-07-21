@@ -41,6 +41,5 @@ public class Main {
         jouChang.compareKogtevranStudents(padmaPatil);
         System.out.println();
         hogwarts.compareHogwartsStudents(sedrikDiggory, harryPotter);
-
     }
 }
