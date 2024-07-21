@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Kogtevran extends hogwarts{
+public class Kogtevran extends hogwarts {
     private int mind;
     private int wisdom;
     private int wit;
@@ -49,11 +49,13 @@ public class Kogtevran extends hogwarts{
         checkParam(creation);
         this.creation = creation;
     }
+
     public void checkParam(int param) {
         if (param < 0 || param > 100) {
             System.out.println("Не верный параметр!");
         }
     }
+
     public void compareKogtevranStudents(Kogtevran student) {
         if (getPower() > student.getPower()) {
             System.out.println(this + " лучший студент, чем " + student);
@@ -80,12 +82,13 @@ public class Kogtevran extends hogwarts{
     public int hashCode() {
         return Objects.hash(mind, wisdom, wit, creation);
     }
+
     public String toStringFullInfo() {
         return "Факультет Когтевран:" +
                 "Студент: " + student +
                 ", магическая сила: " + powerOfMagic +
                 ", трансгрессия: " + transgression +
-                ", ум: " +  mind+
+                ", ум: " + mind +
                 ", мудрость: " + wisdom +
                 ", остроумие: " + wit +
                 ", творчество: " + creation;

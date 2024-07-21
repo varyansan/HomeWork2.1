@@ -1,8 +1,8 @@
 import java.util.Objects;
 
-public class Slizerin extends hogwarts{
+public class Slizerin extends hogwarts {
     private int cunning;
-    private int  determination;
+    private int determination;
     private int ambition;
     private int resourcefulness;
     private int lustForPower;
@@ -60,11 +60,13 @@ public class Slizerin extends hogwarts{
         checkParam(lustForPower);
         this.lustForPower = lustForPower;
     }
+
     public void checkParam(int param) {
         if (param < 0 || param > 100) {
             System.out.println("Не верный параметр!");
         }
     }
+
     public void compareSlizerinStudents(Slizerin student) {
         if (getPower() > student.getPower()) {
             System.out.println(this + " лучший студент, чем " + student);
@@ -74,6 +76,7 @@ public class Slizerin extends hogwarts{
             System.out.println("Студенты равны!");
         }
     }
+
     private int getPower() {
         return cunning + determination + ambition + resourcefulness + lustForPower;
     }
@@ -96,7 +99,7 @@ public class Slizerin extends hogwarts{
                 "Студент: " + student +
                 ", магическая сила: " + powerOfMagic +
                 ", трансгрессия: " + transgression +
-                ", хитрость: " +  cunning+
+                ", хитрость: " + cunning +
                 ", решительность: " + determination +
                 ", амбициозность: " + ambition +
                 ", находчивость: " + resourcefulness +

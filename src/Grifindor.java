@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Grifindor extends hogwarts{
+public class Grifindor extends hogwarts {
     private int nobility;
     private int honor;
     private int bravery;
@@ -38,6 +38,7 @@ public class Grifindor extends hogwarts{
         checkParam(bravery);
         this.bravery = bravery;
     }
+
     public void checkParam(int param) {
         if (param < 0 || param > 100) {
             System.out.println("Не верный параметр!");
